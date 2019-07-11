@@ -26,7 +26,7 @@ module Api
             article.destroy
             render json: {status: 'SUCCESS', message: 'Deleted article', data:article},status: :ok
         end
-
+# test commit
         def update
             article = Article.find(params[:id])
             if article.update_attributes(article_params)
